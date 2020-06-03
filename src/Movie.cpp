@@ -1,4 +1,3 @@
-#include "library.h"
 #include "Movie.h"
 
 Movie::Movie(string title, int year) {
@@ -15,7 +14,5 @@ void Movie::addCopy() {
 }
 
 bool Movie::matches(string &title, int year) {
-    string result;
-    result = Movie::title;
-    return result == title && Movie::year == year;
+    return title == this->title && year == this->year;
 }
