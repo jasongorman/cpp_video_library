@@ -6,14 +6,6 @@ Movie::Movie(string title, int year) {
     this->year = year;
 }
 
-string Movie::getTitle() {
-    return this->title;
-}
-
-int Movie::getYear(){
-    return this->year;
-}
-
 int Movie::getCopies() {
     return this->copies;
 }
@@ -23,5 +15,7 @@ void Movie::addCopy() {
 }
 
 bool Movie::matches(string &title, int year) {
-    return getTitle() == title && getYear() == year;
+    string result;
+    result = Movie::title;
+    return result == title && Movie::year == year;
 }

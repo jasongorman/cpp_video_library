@@ -16,8 +16,7 @@ private:
     int copies = 0;
 public:
     Movie(string title, int year);
-    string getTitle();
-    int getYear();
+
     int getCopies();
     void addCopy();
     bool matches(string &title, int year);
