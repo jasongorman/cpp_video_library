@@ -1,4 +1,5 @@
 #include "library.h"
+#include "Movie.h"
 
 
 void Library::donate(Movie &movie) {
@@ -8,10 +9,10 @@ void Library::donate(Movie &movie) {
 
 bool Library::contains(string title, int year) {
     for(int i = 0; i < this->movies.size(); i++){
-        Movie &movie = this->movies[i];
-        if(movie.getTitle() == title && movie.getYear() == year){
+        if(this->movies[i].matches(title, year)){
             return true;
         }
     }
     return false;
 }
+

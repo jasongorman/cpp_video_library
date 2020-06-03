@@ -20,6 +20,7 @@ public:
     int getYear();
     int getCopies();
     void addCopy();
+    bool matches(string &title, int year);
 };
 
 
