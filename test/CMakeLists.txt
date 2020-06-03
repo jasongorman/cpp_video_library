@@ -1,0 +1,2 @@
+add_executable(video_library_test main.cpp library_test.cpp)
+target_link_libraries(video_library_test video_library gtest gtest_main)

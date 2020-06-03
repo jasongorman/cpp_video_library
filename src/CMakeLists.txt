@@ -1,0 +1,1 @@
+add_library(video_library library.h library.cpp Movie.cpp Movie.h)
